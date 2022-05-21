@@ -6,7 +6,8 @@ spring:
 ---
 
 spring:
-  profiles: local
+  profiles:
+    active: local
   datasource:
     url: jdbc:h2:mem:testdb
     data: classpath:data-h2.sql #시작할 때 실행 시킬 script
@@ -14,6 +15,7 @@ spring:
     show-sql: true
     hibernate:
       ddl-auto: create-drop
+      use-new-id-generator-mappings: false
   h2:
     console:
       enabled: true
