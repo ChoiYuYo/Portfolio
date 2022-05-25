@@ -1,0 +1,5 @@
+MOV AH, 09
+MOV DX, 109
+INT 21
+INT 20
+DB 'Hello World!$'
