@@ -1,0 +1,3 @@
+C:/Users/hansei/Documents/GitHub/Portfolio/C++/WinApi/cmake-build-debug/CMakeFiles/WinApi.dir
+C:/Users/hansei/Documents/GitHub/Portfolio/C++/WinApi/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/hansei/Documents/GitHub/Portfolio/C++/WinApi/cmake-build-debug/CMakeFiles/rebuild_cache.dir
