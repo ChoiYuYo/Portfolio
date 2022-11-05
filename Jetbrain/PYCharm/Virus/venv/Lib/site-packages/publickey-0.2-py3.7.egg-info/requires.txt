@@ -1,0 +1,5 @@
+requests
+paramiko
+pyyaml
+flake8
+jinja2

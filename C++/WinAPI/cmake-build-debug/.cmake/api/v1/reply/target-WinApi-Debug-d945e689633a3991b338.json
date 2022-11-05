@@ -1,0 +1,197 @@
+{
+	"artifacts" : 
+	[
+		{
+<<<<<<< HEAD:C++/WinAPI/cmake-build-debug/.cmake/api/v1/reply/target-WinApi-Debug-d945e689633a3991b338.json
+<<<<<<<< HEAD:Jetbrain/CLion/untitled/cmake-build-debug/.cmake/api/v1/reply/target-untitled-Debug-b963f71e0037de5c5c86.json
+			"path" : "untitled.exe"
+		},
+		{
+			"path" : "untitled.pdb"
+=======
+<<<<<<<< HEAD:Jetbrain/CLion/CMakeProject2/out/build/x64-Debug/.cmake/api/v1/reply/target-CMakeProject2-Debug-62935136d6ccd7f87e45.json
+			"path" : "CMakeProject2.exe"
+		},
+		{
+			"path" : "CMakeProject2.pdb"
+>>>>>>> aa7a0aee4d3b671fd870d4333d0a2c70acef1bda:C++/WinApi/cmake-build-debug/.cmake/api/v1/reply/target-WinApi-Debug-d945e689633a3991b338.json
+========
+			"path" : "WinApi.exe"
+		},
+		{
+			"path" : "WinApi.pdb"
+>>>>>>>> aa7a0aee4d3b671fd870d4333d0a2c70acef1bda:C++/WinApi/cmake-build-debug/.cmake/api/v1/reply/target-WinApi-Debug-d945e689633a3991b338.json
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_executable"
+		],
+		"files" : 
+		[
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+<<<<<<< HEAD:C++/WinAPI/cmake-build-debug/.cmake/api/v1/reply/target-WinApi-Debug-d945e689633a3991b338.json
+				"line" : 6,
+=======
+				"line" : 9,
+>>>>>>> aa7a0aee4d3b671fd870d4333d0a2c70acef1bda:C++/WinApi/cmake-build-debug/.cmake/api/v1/reply/target-WinApi-Debug-d945e689633a3991b338.json
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+<<<<<<< HEAD:C++/WinAPI/cmake-build-debug/.cmake/api/v1/reply/target-WinApi-Debug-d945e689633a3991b338.json
+=======
+<<<<<<<< HEAD:Jetbrain/CLion/CMakeProject2/out/build/x64-Debug/.cmake/api/v1/reply/target-CMakeProject2-Debug-62935136d6ccd7f87e45.json
+					"fragment" : "/DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1"
+========
+>>>>>>> aa7a0aee4d3b671fd870d4333d0a2c70acef1bda:C++/WinApi/cmake-build-debug/.cmake/api/v1/reply/target-WinApi-Debug-d945e689633a3991b338.json
+					"fragment" : "-g"
+				},
+				{
+					"fragment" : "-std=gnu++14"
+<<<<<<< HEAD:C++/WinAPI/cmake-build-debug/.cmake/api/v1/reply/target-WinApi-Debug-d945e689633a3991b338.json
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					1
+				],
+				"standard" : "14"
+			},
+=======
+>>>>>>>> aa7a0aee4d3b671fd870d4333d0a2c70acef1bda:C++/WinApi/cmake-build-debug/.cmake/api/v1/reply/target-WinApi-Debug-d945e689633a3991b338.json
+				}
+			],
+			"language" : "CXX",
+>>>>>>> aa7a0aee4d3b671fd870d4333d0a2c70acef1bda:C++/WinApi/cmake-build-debug/.cmake/api/v1/reply/target-WinApi-Debug-d945e689633a3991b338.json
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+<<<<<<< HEAD:C++/WinAPI/cmake-build-debug/.cmake/api/v1/reply/target-WinApi-Debug-d945e689633a3991b338.json
+<<<<<<<< HEAD:Jetbrain/CLion/untitled/cmake-build-debug/.cmake/api/v1/reply/target-untitled-Debug-b963f71e0037de5c5c86.json
+	"id" : "untitled::@6890427a1f51a3e7e1df",
+=======
+<<<<<<<< HEAD:Jetbrain/CLion/CMakeProject2/out/build/x64-Debug/.cmake/api/v1/reply/target-CMakeProject2-Debug-62935136d6ccd7f87e45.json
+	"id" : "CMakeProject2::@6890427a1f51a3e7e1df",
+>>>>>>> aa7a0aee4d3b671fd870d4333d0a2c70acef1bda:C++/WinApi/cmake-build-debug/.cmake/api/v1/reply/target-WinApi-Debug-d945e689633a3991b338.json
+========
+	"id" : "WinApi::@6890427a1f51a3e7e1df",
+>>>>>>>> aa7a0aee4d3b671fd870d4333d0a2c70acef1bda:C++/WinApi/cmake-build-debug/.cmake/api/v1/reply/target-WinApi-Debug-d945e689633a3991b338.json
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+<<<<<<< HEAD:C++/WinAPI/cmake-build-debug/.cmake/api/v1/reply/target-WinApi-Debug-d945e689633a3991b338.json
+				"fragment" : "-g",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "-lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32",
+=======
+				"fragment" : "/DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "/machine:x64 /debug /INCREMENTAL /subsystem:console",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib",
+>>>>>>> aa7a0aee4d3b671fd870d4333d0a2c70acef1bda:C++/WinApi/cmake-build-debug/.cmake/api/v1/reply/target-WinApi-Debug-d945e689633a3991b338.json
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX"
+	},
+<<<<<<< HEAD:C++/WinAPI/cmake-build-debug/.cmake/api/v1/reply/target-WinApi-Debug-d945e689633a3991b338.json
+<<<<<<<< HEAD:Jetbrain/CLion/untitled/cmake-build-debug/.cmake/api/v1/reply/target-untitled-Debug-b963f71e0037de5c5c86.json
+	"name" : "untitled",
+	"nameOnDisk" : "untitled.exe",
+=======
+<<<<<<<< HEAD:Jetbrain/CLion/CMakeProject2/out/build/x64-Debug/.cmake/api/v1/reply/target-CMakeProject2-Debug-62935136d6ccd7f87e45.json
+	"name" : "CMakeProject2",
+	"nameOnDisk" : "CMakeProject2.exe",
+>>>>>>> aa7a0aee4d3b671fd870d4333d0a2c70acef1bda:C++/WinApi/cmake-build-debug/.cmake/api/v1/reply/target-WinApi-Debug-d945e689633a3991b338.json
+========
+	"name" : "WinApi",
+	"nameOnDisk" : "WinApi.exe",
+>>>>>>>> aa7a0aee4d3b671fd870d4333d0a2c70acef1bda:C++/WinApi/cmake-build-debug/.cmake/api/v1/reply/target-WinApi-Debug-d945e689633a3991b338.json
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0
+			]
+<<<<<<< HEAD:C++/WinAPI/cmake-build-debug/.cmake/api/v1/reply/target-WinApi-Debug-d945e689633a3991b338.json
+=======
+		},
+		{
+			"name" : "Header Files",
+			"sourceIndexes" : 
+			[
+				1
+			]
+>>>>>>> aa7a0aee4d3b671fd870d4333d0a2c70acef1bda:C++/WinApi/cmake-build-debug/.cmake/api/v1/reply/target-WinApi-Debug-d945e689633a3991b338.json
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+<<<<<<< HEAD:C++/WinAPI/cmake-build-debug/.cmake/api/v1/reply/target-WinApi-Debug-d945e689633a3991b338.json
+			"path" : "WinApi/Project/Main.cpp",
+			"sourceGroupIndex" : 0
+=======
+<<<<<<<< HEAD:Jetbrain/CLion/CMakeProject2/out/build/x64-Debug/.cmake/api/v1/reply/target-CMakeProject2-Debug-62935136d6ccd7f87e45.json
+			"path" : "CMakeProject2.cpp",
+========
+			"path" : "WinApi/Project/Main.cpp",
+>>>>>>>> aa7a0aee4d3b671fd870d4333d0a2c70acef1bda:C++/WinApi/cmake-build-debug/.cmake/api/v1/reply/target-WinApi-Debug-d945e689633a3991b338.json
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "CMakeProject2.h",
+			"sourceGroupIndex" : 1
+>>>>>>> aa7a0aee4d3b671fd870d4333d0a2c70acef1bda:C++/WinApi/cmake-build-debug/.cmake/api/v1/reply/target-WinApi-Debug-d945e689633a3991b338.json
+		}
+	],
+	"type" : "EXECUTABLE"
+}

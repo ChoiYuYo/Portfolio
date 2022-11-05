@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+<<<<<<<< HEAD:Jetbrain/PYCharm/Virus/.idea/modules.xml
+      <module fileurl="file://$PROJECT_DIR$/.idea/Virus.iml" filepath="$PROJECT_DIR$/.idea/Virus.iml" />
+========
+      <module fileurl="file://$PROJECT_DIR$/.idea/assembly.iml" filepath="$PROJECT_DIR$/.idea/assembly.iml" />
+>>>>>>>> aa7a0aee4d3b671fd870d4333d0a2c70acef1bda:assembly/.idea/modules.xml
+    </modules>
+  </component>
+</project>

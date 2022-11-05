@@ -1,0 +1,3 @@
+[console_scripts]
+pysrc3 = pysrc3:main
+

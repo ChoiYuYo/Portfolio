@@ -1,0 +1,196 @@
+Metadata-Version: 2.1
+Name: srcsrv
+Version: 1.1.3
+Summary: Source indexing package
+Home-page: https://github.com/urielmann/srcsrv
+Author: Uri Mann
+Author-email: abba.mann@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Development Status :: 4 - Beta
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: GitPython
+Requires-Dist: svn
+
+# Source Indexing  
+
+## Table of Content
+
+* [Disclaimer](#disclaimer)
+
+* [Package Description](#Package-Description)
+
+* [Usage](#Usage)
+
+  * [Build diagnostic options](#build-diagnostic-options)
+
+  * [Git options](#git-options)
+
+  * [SubVersion options](#SubVersion-options)
+
+  * [Options file](#options-file)
+
+* [Advance Topics](#advance-Topics)
+
+  * [Full Disclosure](#full-disclosure)
+
+  * [Source Indexing Primer](#source-indexing-primer)
+
+  * [Building with Source Indexing](#building-with-source-indexing)
+
+* [External Links](#external-links)
+
+## Disclaimer
+
+The author of this package does not warrant the functionality contained in the package will meet your requirements or that the operation of the package will be uninterrupted or error-free.  Note: In no event will the author be liable to you for any damages, including any corruption of binaries or PDBs, lost profit, lost savings, lost patience or other incidental or consequential damage.  
+
+With that part out of the way, my goal is to make something that is useful. If you'd like to request additional features, report bugs or provide any other feedback, feel free to reach me.  
+[Uri Mann](mailto:abba.mann@gmail.com)  
+
+## Package Description
+
+Python script to add source indexing to **.PDB** files. The source will be automatically pulled from Git or SubVersion. The python script can be invoked on each **.PDB** file after the link phase of the build is completed. Alternatively, the script can receive a list of one or more directories where the **.PDBs** are placed at the end of the build. Internally, the script simply scans each directory recursively and invoke itself on each file with **.pdb** extension. The script takes the following arguments:
+
+## Usage
+
+>**-p**, **--pdb** - Path to .PDB file to process *(e.g.: -p c:\path\file.pdb)*. (see also: **--pdbs** option).  
+>**-P**, **--pdbs** - One or more directories containing **.PDB** files *(e.g.: --pdbs dir1 dir2 ...)*. The script will recurs to each sub-directory under the specified list. The path is assumed to be fully-qualified or relative to **--build-base**.  
+>**-b**, **--build-base** - Root of the build directory. This path correspond with top of the repository branch being built.  
+>**-r**, **--branch** - Remote repository branch.  
+>**-j**, **--project'** - Repository project (location of cached source). This optional argument will be set to the same value as **--branch** by default.  
+>**-x**, **--extensions** - Semicolon separated list of source extensions (default:cpp;c;h).  
+>**-s**, **--srcsrv** - Path to SDK or DDK source indexing directory. Default path is **C:\Program Files (x86)\Windows Kits\10\Debuggers\x64\srcsrv** (Windows 8.0 DTfW or newer required).  
+>**-c**, **--scheme** - Repository server scheme. Default scheme is *https://*  
+>**-u**, **--plugin** - Plugin class. default is srcsrv.plugins.Git. Plugin classes available in current version: **srcsrv.plugins.Git**, **srcsrv.plugins.SVN**.  
+
+## Build diagnostic options
+
+>**-o**, **--output** - Path of the source indexing file used for the *srcsrv* stream in the **.PDB**. If this parameter is not used if **--pdbs** option is present. The script will use a file with the same name as the binary with .ini extension *(i.e.: prog.exe will produce prog.pdb which is embedded with prog.ini)*. For build troubleshooting you can use the **--pdb** option without specifying **--output** file. The content of this file is sent to *stdout* and the **.PDB** will not be modified (see: **--no-process**).  
+>**-k**, **--keep** - Be default the file specified by the **--output** parameter (or .ini file) is deleted after processing. With this option specified the file is kept in the same directory as the **.PDB**.  
+>**-n**, **--no-process** - The script is run without modifying the **.PDB**. Should be used with with **--keep** option or with logging enabled.  
+>**-l**, **--log** - Path to log file. By default all logging is visible in *stdout*.
+
+## Git options
+
+>**-I**, **--uri** - Git repository server URI. default github.com  
+>**-X**, **--hexsha** - Provide repository hash instead of querying Git for hash of the build.  
+
+## Git environment
+
+**GITHUB_TOKEN** - User [token](https://help.github.com/en/github/authenticating-to-github/creating-a-personal-access-token-for-the-command-line) This is expected to be the string similar to *`<token_hash>@`*. It is important to include @ as part of the token variable.  
+**GITHUB_CREDS** - User credentials. This is expected to be the string: **-u *user:password***  
+Note: Only one of the above variables should be set. Not both.  
+For indexing, [Git command line tools](https://git-scm.com/downloads) are required to be installed and added to the path.  
+For debugging, [cURL command line](https://curl.haxx.se/download.html) tool must be installed and added to the path.  
+
+## SubVersion options
+
+>**-I**, **--uri** - SubVersion repository server URI.  
+>**-R**, **--revision** - Repository revision instead of querying SVN revision of the build.  
+
+## SVN environment
+
+**SUBVERION_TOKEN** - User credentials. This is expected to be the string similar to *`<token_hash>@`*. It is important to include @ as part of the token variable  
+**SUBVERION_CREDS** - User credentials. This is expected to be the string: **-u *user:password***  
+Note: Only one of the above variables should be set. Not both.  
+For indexing, [SubVersion command line tools](https://subversion.apache.org/packages.html) are required to be installed and added to the path.  
+For debugging, [cURL command line](https://curl.haxx.se/download.html) tool must be installed and added to the path.  
+
+Note: Credentials for secured access must be set in order to allow the debugger to automatically download the indexed source. **GITHUB_TOKEN** or **SVN_CREDS** can be set as an environment variable or in [srcsrv.ini](https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/the-srcsrv-ini-file) file.  
+
+## Options file
+
+The script can also be invoked with a response file. Using **@path\resp_file_name**. The file can contain any of the above parameters. Response file and command line parameters can be combined. Example:
+
+```
+--build-base D:\dev\svn\myproject
+--uri mysubversion.com
+--pdbs debug release amd64dbg amd64rel  
+--branch myrepo/myproj/trunk
+--project myrepo/myproj
+--log ..\srcsrv.log
+--plugin srcsrv.plugins.SVN
+```
+
+## Advance Topics
+
+### Full Disclosure
+
+Before going down the rabbit hole I created here the reader should know that there are existing (possibly simpler) other solutions to indexing your source. I've created this package to address use cases which these solutions do not address or address in a limited way. I would encourage you to first explore if your source indexing needs are already addressed by Perl scripts provided as part of Microsoft's **Debugging Tools for Windows** or other existing methods which take advantage of the built-in VERCTRL=http. Though this package can also be used for the same purpose, it was meant to address retrieving source from Git and SVN repositories secured by SSL.  
+
+### Source Indexing Primer
+
+Source indexing operates by embedding special stream into **.PDB** files. Program Database (.**PDB**) is a general purpose structured storage containing various metadata regarding an executable being debugged. The storage is composed of several "streams", each in it's own distinguished format. Some of the streams allow the debugger to match specific offsets in the executable with the program's source code line which generated its' machine's instructions. This allows the debugger to highlight the correct source line as you trace the execution in the debugger. The source filename in the **.PDB** is **full path** to the source at the time the programs was compiled. If the program being debugged is on the same machine where the compilation took place, the debugger can open the source by using the **.PDB** embedded path. However, once the executable is moved to a different machine, this link is broken.  
+Another optional streams in this collection is named *srcsrv*. The stream is a mapping between the source file path in the **.PDB** and the repository where source files are being safeguarded. For obvious reasons this mapping must contain a way to identify the exact revision of the source file which existed at compilation time. This mapping is used by the debugger to first retrieve and then load matching source from your SCM. Since different SCM systems are accessed differently, the *srcsrv* stream contains specification of a command line to retrieve a specified revision of a source file.  
+The *srcsrv* stream is relatively simple plain text script composed of two main parts:
+
+1. The first part of the script are various variables to be used to compose the command retrieving the source code. The most important of these variables are **SRCSRVCMD** - which is the actual command line to invoke - and, **SRCSRVTRG** - which designate the location where the source is cached by the debugger. When the debugger fetches the source code form the repository it simply executes **SRCSRVCMD**. Next it loads the file from **SRCSRVTRG** to trace debugee's execution.  
+Each variable is composed of literal parts and placeholders to be substituted by the values of other variables. These placeholders are in the form of a *%var_name%*. The substitution values may come form:  
+a) [SRCSRV.ini file](https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/the-srcsrv-ini-file) variables  
+b) The *srcsrv* stream variables  
+c) Environment variables
+1. The second part is a table which maps the source files paths embedded in the **.PDB** to the repository path. Each source file appears on a single line starting with the path passed to the compiler at the time the **.PDB** was built. The remainder of the line are various parts of the repository path separated by asterisks. In the *srcsrv* stream script these segments appear as **VAR1**, **VAR2**,...**VARn** according to their position on the line.  
+Here's an example *srcsrv* stream:
+
+```text
+VERSION=2
+VERCTRL=
+SRCSRV: variables ------------------------------------------
+BUILD_BASE=D:\play\srcsrv\
+SRCSRVTRG=%git_extract_target%
+SRCSRVCMD=%git_cmd%
+GIT_EXTRACT_TARGET=%git_cache%\%fnbksl%(%git_branch%)%fnbksl%(%var2%)\%var3%\%fnfile%(%var2%)
+GIT_CMD=%git_exe% -H "Accept: application/vnd.github.v3.raw" %git_creds% -L %git_url%%var2% --create-dirs -o %SRCSRVTRG%
+GIT_EXE=curl.exe
+GIT_URL=%git_scheme%%git_login%https://github.com/urielmann/raw/%git_branch%/%git_hexsha%
+GIT_SCHEME=https://
+GIT_BRANCH=srcsrv
+GIT_HEXSHA=f74444851edc71871b65b9788b82c2dfef2564b0
+GIT_CACHE=%userprofile%
+GIT_LOGIN=%github_token%
+GIT_CREDS=%github_creds%
+SRCSRV: source files ---------------------------------------
+d:\play\srcsrv\test\src\test.cpp*/test/src/test.cpp*60159617AFE577D149C05C1A61C42967
+d:\play\srcsrv\test\src\inc\test.h*/test/src/inc/test.h*1EFEF0DB2CCD8F7B51E33D928F204984
+SRCSRV: end ------------------------------------------------
+```
+
+## Building with Source Indexing
+
+If your build is already driven by a Python script simply import this package and call main() function with the parameters required by your build system and repository.  
+Example:
+
+```python
+import os
+import srcsrv
+
+srcsrv.main(['--build-base', r'c:\builds\ver1.1.0',
+             '--pdbs', 'debug', 'release',
+             '--hexsha', os.environ['GIT_SHA'],
+             ...])
+```
+
+For batch file driven builds I'd recommend to warp your Python script into a batch file. The parameters can be fed into the package on the commend line.  
+Example:
+
+```bat
+1>2# : ^
+'''
+@echo running python
+@python "%~f0" %*
+@exit /b !ERRORLEVEL!
+rem ^
+'''
+import srcsrv
+srcsrv.main()
+```
+
+## External Links
+
+[Srcsrv.doc](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=3&ved=2ahUKEwjO_sL72NHlAhVYnp4KHcdmCdgQFjACegQIAxAC&url=https%3A%2F%2Fcrashopensource.files.wordpress.com%2F2007%2F10%2Fsrcsrv.doc&usg=AOvVaw0ONZV3AtYTB1S8sgPqhTsU)  
+[Source Indexing is Underused Awesomeness](https://randomascii.wordpress.com/2011/11/11/source-indexing-is-underused-awesomeness/)  
+

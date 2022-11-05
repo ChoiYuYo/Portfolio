@@ -1,0 +1,147 @@
+{
+	"cmake" : 
+	{
+		"generator" : 
+		{
+			"multiConfig" : false,
+			"name" : "MinGW Makefiles"
+		},
+		"paths" : 
+		{
+<<<<<<<< HEAD:Jetbrain/CLion/untitled/cmake-build-debug/.cmake/api/v1/reply/index-2021-12-09T04-54-40-0084.json
+			"cmake" : "C:/Users/USER/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.123/bin/cmake/win/bin/cmake.exe",
+			"cpack" : "C:/Users/USER/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.123/bin/cmake/win/bin/cpack.exe",
+			"ctest" : "C:/Users/USER/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.123/bin/cmake/win/bin/ctest.exe",
+			"root" : "C:/Users/USER/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.123/bin/cmake/win/share/cmake-3.21"
+========
+			"cmake" : "C:/Users/hansei/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5591.52/bin/cmake/win/bin/cmake.exe",
+			"cpack" : "C:/Users/hansei/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5591.52/bin/cmake/win/bin/cpack.exe",
+			"ctest" : "C:/Users/hansei/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5591.52/bin/cmake/win/bin/ctest.exe",
+			"root" : "C:/Users/hansei/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5591.52/bin/cmake/win/share/cmake-3.22"
+>>>>>>>> aa7a0aee4d3b671fd870d4333d0a2c70acef1bda:C++/WinApi/cmake-build-debug/.cmake/api/v1/reply/index-2022-05-25T00-37-57-0266.json
+		},
+		"version" : 
+		{
+			"isDirty" : false,
+			"major" : 3,
+			"minor" : 21,
+			"patch" : 1,
+			"string" : "3.21.1",
+			"suffix" : ""
+		}
+	},
+	"objects" : 
+	[
+		{
+<<<<<<<< HEAD:Jetbrain/CLion/untitled/cmake-build-debug/.cmake/api/v1/reply/index-2021-12-09T04-54-40-0084.json
+			"jsonFile" : "codemodel-v2-58ed33479495ed294c05.json",
+========
+			"jsonFile" : "codemodel-v2-ad2766ca0b85b159b0a9.json",
+>>>>>>>> aa7a0aee4d3b671fd870d4333d0a2c70acef1bda:C++/WinApi/cmake-build-debug/.cmake/api/v1/reply/index-2022-05-25T00-37-57-0266.json
+			"kind" : "codemodel",
+			"version" : 
+			{
+				"major" : 2,
+				"minor" : 3
+			}
+		},
+		{
+<<<<<<<< HEAD:Jetbrain/CLion/untitled/cmake-build-debug/.cmake/api/v1/reply/index-2021-12-09T04-54-40-0084.json
+			"jsonFile" : "cache-v2-2559219a8d18aa902d87.json",
+========
+			"jsonFile" : "cache-v2-be698b56dd0c32efe8f5.json",
+>>>>>>>> aa7a0aee4d3b671fd870d4333d0a2c70acef1bda:C++/WinApi/cmake-build-debug/.cmake/api/v1/reply/index-2022-05-25T00-37-57-0266.json
+			"kind" : "cache",
+			"version" : 
+			{
+				"major" : 2,
+				"minor" : 0
+			}
+		},
+		{
+<<<<<<<< HEAD:Jetbrain/CLion/untitled/cmake-build-debug/.cmake/api/v1/reply/index-2021-12-09T04-54-40-0084.json
+			"jsonFile" : "cmakeFiles-v1-9f3fa7633eeee649dcd5.json",
+========
+			"jsonFile" : "cmakeFiles-v1-16808bb5f6de932abecb.json",
+>>>>>>>> aa7a0aee4d3b671fd870d4333d0a2c70acef1bda:C++/WinApi/cmake-build-debug/.cmake/api/v1/reply/index-2022-05-25T00-37-57-0266.json
+			"kind" : "cmakeFiles",
+			"version" : 
+			{
+				"major" : 1,
+				"minor" : 0
+			}
+		},
+		{
+<<<<<<<< HEAD:Jetbrain/CLion/untitled/cmake-build-debug/.cmake/api/v1/reply/index-2021-12-09T04-54-40-0084.json
+			"jsonFile" : "toolchains-v1-59b61c0eba45650fcf7e.json",
+========
+			"jsonFile" : "toolchains-v1-7f12771a93e8d53f0613.json",
+>>>>>>>> aa7a0aee4d3b671fd870d4333d0a2c70acef1bda:C++/WinApi/cmake-build-debug/.cmake/api/v1/reply/index-2022-05-25T00-37-57-0266.json
+			"kind" : "toolchains",
+			"version" : 
+			{
+				"major" : 1,
+				"minor" : 0
+			}
+		}
+	],
+	"reply" : 
+	{
+		"cache-v2" : 
+		{
+<<<<<<<< HEAD:Jetbrain/CLion/untitled/cmake-build-debug/.cmake/api/v1/reply/index-2021-12-09T04-54-40-0084.json
+			"jsonFile" : "cache-v2-2559219a8d18aa902d87.json",
+========
+			"jsonFile" : "cache-v2-be698b56dd0c32efe8f5.json",
+>>>>>>>> aa7a0aee4d3b671fd870d4333d0a2c70acef1bda:C++/WinApi/cmake-build-debug/.cmake/api/v1/reply/index-2022-05-25T00-37-57-0266.json
+			"kind" : "cache",
+			"version" : 
+			{
+				"major" : 2,
+				"minor" : 0
+			}
+		},
+		"cmakeFiles-v1" : 
+		{
+<<<<<<<< HEAD:Jetbrain/CLion/untitled/cmake-build-debug/.cmake/api/v1/reply/index-2021-12-09T04-54-40-0084.json
+			"jsonFile" : "cmakeFiles-v1-9f3fa7633eeee649dcd5.json",
+========
+			"jsonFile" : "cmakeFiles-v1-16808bb5f6de932abecb.json",
+>>>>>>>> aa7a0aee4d3b671fd870d4333d0a2c70acef1bda:C++/WinApi/cmake-build-debug/.cmake/api/v1/reply/index-2022-05-25T00-37-57-0266.json
+			"kind" : "cmakeFiles",
+			"version" : 
+			{
+				"major" : 1,
+				"minor" : 0
+			}
+		},
+		"codemodel-v2" : 
+		{
+<<<<<<<< HEAD:Jetbrain/CLion/untitled/cmake-build-debug/.cmake/api/v1/reply/index-2021-12-09T04-54-40-0084.json
+			"jsonFile" : "codemodel-v2-58ed33479495ed294c05.json",
+========
+			"jsonFile" : "codemodel-v2-ad2766ca0b85b159b0a9.json",
+>>>>>>>> aa7a0aee4d3b671fd870d4333d0a2c70acef1bda:C++/WinApi/cmake-build-debug/.cmake/api/v1/reply/index-2022-05-25T00-37-57-0266.json
+			"kind" : "codemodel",
+			"version" : 
+			{
+				"major" : 2,
+				"minor" : 3
+			}
+		},
+		"toolchains-v1" : 
+		{
+<<<<<<<< HEAD:Jetbrain/CLion/untitled/cmake-build-debug/.cmake/api/v1/reply/index-2021-12-09T04-54-40-0084.json
+			"jsonFile" : "toolchains-v1-59b61c0eba45650fcf7e.json",
+========
+			"jsonFile" : "toolchains-v1-7f12771a93e8d53f0613.json",
+>>>>>>>> aa7a0aee4d3b671fd870d4333d0a2c70acef1bda:C++/WinApi/cmake-build-debug/.cmake/api/v1/reply/index-2022-05-25T00-37-57-0266.json
+			"kind" : "toolchains",
+			"version" : 
+			{
+				"major" : 1,
+				"minor" : 0
+			}
+		}
+	}
+}

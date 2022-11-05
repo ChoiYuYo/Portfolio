@@ -1,0 +1,103 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+<<<<<<< HEAD:C++/WinAPI/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-ad2766ca0b85b159b0a9.json
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.19"
+=======
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+>>>>>>> aa7a0aee4d3b671fd870d4333d0a2c70acef1bda:C++/WinApi/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-ad2766ca0b85b159b0a9.json
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+<<<<<<< HEAD:C++/WinAPI/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-ad2766ca0b85b159b0a9.json
+<<<<<<<< HEAD:Jetbrain/CLion/untitled/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-58ed33479495ed294c05.json
+					"name" : "untitled",
+=======
+<<<<<<<< HEAD:Jetbrain/CLion/CMakeProject1/out/build/x64-Debug/.cmake/api/v1/reply/codemodel-v2-e0d3625edc3915ec2b97.json
+					"name" : "CMakeProject1",
+>>>>>>> aa7a0aee4d3b671fd870d4333d0a2c70acef1bda:C++/WinApi/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-ad2766ca0b85b159b0a9.json
+========
+					"name" : "WinApi",
+>>>>>>>> aa7a0aee4d3b671fd870d4333d0a2c70acef1bda:C++/WinApi/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-ad2766ca0b85b159b0a9.json
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+<<<<<<< HEAD:C++/WinAPI/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-ad2766ca0b85b159b0a9.json
+<<<<<<<< HEAD:Jetbrain/CLion/untitled/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-58ed33479495ed294c05.json
+					"id" : "untitled::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-untitled-Debug-b963f71e0037de5c5c86.json",
+					"name" : "untitled",
+=======
+<<<<<<<< HEAD:Jetbrain/CLion/CMakeProject1/out/build/x64-Debug/.cmake/api/v1/reply/codemodel-v2-e0d3625edc3915ec2b97.json
+					"id" : "CMakeProject1::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-CMakeProject1-Debug-8eacca426436b3dbb40b.json",
+					"name" : "CMakeProject1",
+>>>>>>> aa7a0aee4d3b671fd870d4333d0a2c70acef1bda:C++/WinApi/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-ad2766ca0b85b159b0a9.json
+========
+					"id" : "WinApi::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-WinApi-Debug-d945e689633a3991b338.json",
+					"name" : "WinApi",
+>>>>>>>> aa7a0aee4d3b671fd870d4333d0a2c70acef1bda:C++/WinApi/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-ad2766ca0b85b159b0a9.json
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+<<<<<<< HEAD:C++/WinAPI/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-ad2766ca0b85b159b0a9.json
+<<<<<<<< HEAD:Jetbrain/CLion/untitled/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-58ed33479495ed294c05.json
+		"build" : "D:/JetBrain/CLion/untitled/cmake-build-debug",
+		"source" : "D:/JetBrain/CLion/untitled"
+=======
+<<<<<<<< HEAD:Jetbrain/CLion/CMakeProject1/out/build/x64-Debug/.cmake/api/v1/reply/codemodel-v2-e0d3625edc3915ec2b97.json
+		"build" : "D:/JetBrain/CLion/CMakeProject1/out/build/x64-Debug",
+		"source" : "D:/JetBrain/CLion/CMakeProject1"
+>>>>>>> aa7a0aee4d3b671fd870d4333d0a2c70acef1bda:C++/WinApi/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-ad2766ca0b85b159b0a9.json
+========
+		"build" : "C:/Users/hansei/Documents/GitHub/Portfolio/C++/WinApi/cmake-build-debug",
+		"source" : "C:/Users/hansei/Documents/GitHub/Portfolio/C++/WinApi"
+>>>>>>>> aa7a0aee4d3b671fd870d4333d0a2c70acef1bda:C++/WinApi/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-ad2766ca0b85b159b0a9.json
+	},
+	"version" : 
+	{
+		"major" : 2,
+<<<<<<< HEAD:C++/WinAPI/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-ad2766ca0b85b159b0a9.json
+		"minor" : 3
+=======
+		"minor" : 2
+>>>>>>> aa7a0aee4d3b671fd870d4333d0a2c70acef1bda:C++/WinApi/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-ad2766ca0b85b159b0a9.json
+	}
+}
