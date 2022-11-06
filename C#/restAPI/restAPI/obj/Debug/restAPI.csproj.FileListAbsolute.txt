@@ -1,0 +1,10 @@
+D:\Portfolio\C#\restAPI\restAPI\bin\Debug\restAPI.exe.config
+D:\Portfolio\C#\restAPI\restAPI\bin\Debug\restAPI.exe
+D:\Portfolio\C#\restAPI\restAPI\bin\Debug\restAPI.pdb
+D:\Portfolio\C#\restAPI\restAPI\obj\Debug\restAPI.csproj.AssemblyReference.cache
+D:\Portfolio\C#\restAPI\restAPI\obj\Debug\restAPI.Properties.Resources.resources
+D:\Portfolio\C#\restAPI\restAPI\obj\Debug\restAPI.csproj.GenerateResource.cache
+D:\Portfolio\C#\restAPI\restAPI\obj\Debug\restAPI.csproj.CoreCompileInputs.cache
+D:\Portfolio\C#\restAPI\restAPI\obj\Debug\restAPI.exe
+D:\Portfolio\C#\restAPI\restAPI\obj\Debug\restAPI.pdb
+D:\Portfolio\C#\restAPI\restAPI\obj\Debug\restAPI.MainForm.resources
